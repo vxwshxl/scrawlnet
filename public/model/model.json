@@ -1,0 +1,273 @@
+{
+ "name": "scrawlnet",
+ "input": [
+  1,
+  28,
+  28
+ ],
+ "normalize": {
+  "mean": 0.1307,
+  "std": 0.3081
+ },
+ "params": 105866,
+ "bytes": 423464,
+ "layers": [
+  {
+   "name": "conv1",
+   "weight": {
+    "shape": [
+     16,
+     1,
+     3,
+     3
+    ],
+    "offset": 0,
+    "length": 144
+   },
+   "bias": {
+    "shape": [
+     16
+    ],
+    "offset": 576,
+    "length": 16
+   }
+  },
+  {
+   "name": "conv2",
+   "weight": {
+    "shape": [
+     32,
+     16,
+     3,
+     3
+    ],
+    "offset": 640,
+    "length": 4608
+   },
+   "bias": {
+    "shape": [
+     32
+    ],
+    "offset": 19072,
+    "length": 32
+   }
+  },
+  {
+   "name": "fc1",
+   "weight": {
+    "shape": [
+     64,
+     1568
+    ],
+    "offset": 19200,
+    "length": 100352
+   },
+   "bias": {
+    "shape": [
+     64
+    ],
+    "offset": 420608,
+    "length": 64
+   }
+  },
+  {
+   "name": "fc2",
+   "weight": {
+    "shape": [
+     10,
+     64
+    ],
+    "offset": 420864,
+    "length": 640
+   },
+   "bias": {
+    "shape": [
+     10
+    ],
+    "offset": 423424,
+    "length": 10
+   }
+  }
+ ],
+ "history": [
+  {
+   "epoch": 1,
+   "trainLoss": 1.0936,
+   "trainAcc": 0.6444,
+   "testLoss": 0.1077,
+   "testAcc": 0.9695
+  },
+  {
+   "epoch": 2,
+   "trainLoss": 0.2956,
+   "trainAcc": 0.9067,
+   "testLoss": 0.0547,
+   "testAcc": 0.9818
+  },
+  {
+   "epoch": 3,
+   "trainLoss": 0.1941,
+   "trainAcc": 0.9401,
+   "testLoss": 0.0455,
+   "testAcc": 0.9852
+  },
+  {
+   "epoch": 4,
+   "trainLoss": 0.1513,
+   "trainAcc": 0.9535,
+   "testLoss": 0.0299,
+   "testAcc": 0.9901
+  },
+  {
+   "epoch": 5,
+   "trainLoss": 0.1221,
+   "trainAcc": 0.9631,
+   "testLoss": 0.0278,
+   "testAcc": 0.9896
+  },
+  {
+   "epoch": 6,
+   "trainLoss": 0.1077,
+   "trainAcc": 0.9673,
+   "testLoss": 0.0252,
+   "testAcc": 0.9906
+  },
+  {
+   "epoch": 7,
+   "trainLoss": 0.0931,
+   "trainAcc": 0.9724,
+   "testLoss": 0.0233,
+   "testAcc": 0.9916
+  },
+  {
+   "epoch": 8,
+   "trainLoss": 0.0843,
+   "trainAcc": 0.9752,
+   "testLoss": 0.0222,
+   "testAcc": 0.9921
+  }
+ ],
+ "testAcc": 0.9921,
+ "confusion": [
+  [
+   978,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   1131,
+   1,
+   0,
+   0,
+   0,
+   1,
+   2,
+   0,
+   0
+  ],
+  [
+   1,
+   0,
+   1027,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1005,
+   0,
+   2,
+   0,
+   2,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   973,
+   0,
+   1,
+   0,
+   1,
+   7
+  ],
+  [
+   1,
+   0,
+   0,
+   4,
+   0,
+   885,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   2,
+   1,
+   0,
+   2,
+   2,
+   947,
+   0,
+   3,
+   0
+  ],
+  [
+   0,
+   1,
+   2,
+   0,
+   2,
+   0,
+   0,
+   1018,
+   0,
+   5
+  ],
+  [
+   1,
+   1,
+   2,
+   0,
+   1,
+   1,
+   1,
+   0,
+   965,
+   2
+  ],
+  [
+   2,
+   0,
+   0,
+   0,
+   7,
+   2,
+   0,
+   4,
+   2,
+   992
+  ]
+ ]
+}
